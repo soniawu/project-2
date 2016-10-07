@@ -14,45 +14,58 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 */
 html {
   font-size: 1.125em;  /* 18px  18/16=1.125 */
-  line-height: 1.2;   /* ratios 1.2 ->21.6px*/
-  background-color: white;
-  padding: 16px 10px;  /* */
+  line-height: 1.2em;  /* 22px 22/18=1.222 */
+  padding: 1em 0.5em;  /* TB: 1 grid line 22px, RL: 05 grid line 11px */
 }
 h1 {
-  /* font-size: 2.074em; /* 37.325px/18px */
-  font-size: 1.728em;  /* 31.104px */
-  line-height: 1.2;  /* ratio 1.2->37.325 */
-  padding-bottom: 0.5em;
+  font-size: 1.728em;  /* 3 sizes up 31.104px */
+  line-height: 1.061em;    /* 1.5 grid line 33px, 33/31.104=1.061 */
+  padding-bottom: 0.322em;  /* 10px  10/31.104=0.322 */
 }
 h2 {
-  font-size: 1.44em; /* 25.92ppx/18=1.44 */
-  line-height: 1.2;
-  padding-bottom: 0.5em;
+  font-size: 1.44em; /* 2 sizes up 25.92px/18=1.444 */
+  line-height: 1.44em;  /* 1.2 grid line 26px, 26/18=1.444 */
+  padding-bottom: 0.386em; /* 10px 10/25.92= */
+}
+h3,h4 {
+  font-size: 1.2em; /* 1 size up 21.6px 21.6/18=1.2 */
+  padding-bottom:0.6111em; /* 11px 11/18=0.556 */
+}
+h4 {
+  padding-left: 0.833em; /* 18px 18/21.6=0.833 */
 }
 nav {
-  /*font-size: 0.889em; /* 16px/18px=0.889em */
-  /*line-height: 1em; */
   /* color from http://www.colourlovers.com/color/C4A79F/Hint_of_spice */
-  padding: 0.333em; /* 6px/18=0.333 */
-  background-color: #C4A79F; 
+  margin-left: 0;  /* want it all the way to the left, but doesn't work */
+  background-color: #C4A79F;
+  /*padding: 0.333em; /* 6px/18=0.333 */
 }
-
 p {
-  padding-bottom: 1.5em;  /* 32px, based on 1.5 line, 21.375x1.5 */
+  padding-bottom: 1.444em;  /* 1.2 grid line, 26px 26/18= */
 }
 video {
   width: 80%;
-  padding-bottom:0.556em; /* 10/18=0.556 */
+  padding-bottom:0.6111em; /* 11px 11/18=0.611 */
 }
 footer {
   font-size: 0.694em; /* 12.5/18=0.694 */
   background-color: #C4A79F;
 }
+.header {
+  padding-bottom: 0.611em; /*0.5 gridline 11px 11/18= */
+}
 /* ===== MODULAR STYLES ===== */
 nav ul {
-  padding:0.556em;
+  padding:0.611em;  /* 11px  */
 }
 h2 a  {
   font-size:0.694em; /* 18px/25.92=0.694 */
+}
+.exp-list{
+  padding-left: 1em; /* 18/18=1 */
+  padding-bottom:0.611em; /* 11/18=0.611 */
+}
+.exp-list li {
+  padding-bottom:0.611em; /* 11/18=0.611 */
 }
 /* ===== STATE STYLES ===== */
