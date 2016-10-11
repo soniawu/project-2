@@ -8,64 +8,95 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 /* ===== BASE STYLES ===== */
 
-/* 
-  Try to use bases 18px, ratios 1.2 "minor third"  
-  http://www.modularscale.com/?18&px&1.2&web&text
-*/
 html {
-  font-size: 1.125em;  /* 18px  18/16=1.125 */
-  line-height: 1.2em;  /* 22px 22/18=1.222 */
-  padding: 1em 0.5em;  /* TB: 1 grid line 22px, RL: 05 grid line 11px */
+  font-size: 1.125em;   /* 18px  18/16=1.125 */
+  line-height: 1.222em;    /* 22px  22/18=1.222 */
+  padding: 1.222em 0.8em;   /* 22px=1.222em, 11px  11/18=0.611 */
+  background-color: #1e2e41;
 }
 h1 {
-  font-size: 1.728em;  /* 3 sizes up 31.104px */
-  line-height: 1.061em;    /* 1.5 grid line 33px, 33/31.104=1.061 */
-  padding-bottom: 0.322em;  /* 10px  10/31.104=0.322 */
+  font-size: 1.728em; /* 3 sizes up, 31.104px= 1.728em */
+  line-height: 1.06em ; /* 1.5 grid line 33px, 33/31.104=1.06em */
+  padding-bottom: 0.611em;  /* 11px=0.611em */
 }
 h2 {
-  font-size: 1.44em; /* 2 sizes up 25.92px/18=1.444 */
-  line-height: 1.44em;  /* 1.2 grid line 26px, 26/18=1.444 */
-  padding-bottom: 0.386em; /* 10px 10/25.92= */
-}
-h3,h4 {
-  font-size: 1.2em; /* 1 size up 21.6px 21.6/18=1.2 */
-  padding-bottom:0.6111em; /* 11px 11/18=0.556 */
-}
-h4 {
-  padding-left: 0.833em; /* 18px 18/21.6=0.833 */
+  font-size: 1.44em; /* 2 sizes up, 25.92px, 1.44em */
+  line-height: 1.003em; /* 26px  26/25.92=1.003em  may change it later */
+  padding-bottom: 0.386em; /* 10px 10/25.92=0.386em */
+  font-style: italic;
+  /* color: #1e2e41; */
 }
 nav {
-  /* color from http://www.colourlovers.com/color/C4A79F/Hint_of_spice */
-  margin-left: 0;  /* want it all the way to the left, but doesn't work */
-  background-color: #C4A79F;
-  /*padding: 0.333em; /* 6px/18=0.333 */
+  font-size: 16px;
+  display: block;
+  /* background-color: #C4A79F;  /* Got this from color lover */
+  /* padding: 0.333em; /* 6px for all sides, 6/18=0.333em */
 }
 p {
-  padding-bottom: 1.444em;  /* 1.2 grid line, 26px 26/18= */
+  padding-bottom: 1.444em; /* 1.2 grid line 26px, 26/18=1.444em */
 }
 video {
   width: 80%;
-  padding-bottom:0.6111em; /* 11px 11/18=0.611 */
+  padding-bottom: 0.611em; /* 11px, 11/18=0.611em */
 }
 footer {
-  font-size: 0.694em; /* 12.5/18=0.694 */
+  font-size: 0.694em; /* 2 sizes down, 12.5px 0.694em */
   background-color: #C4A79F;
 }
+h2 a {
+  font-size: 0.482em; /* 2 sizes down, 12.5px 12.5/25.92=0.482em */
+}
 .header {
-  padding-bottom: 0.611em; /*0.5 gridline 11px 11/18= */
+    /* font-size: 1.667em;                 /* 30px 30/18=1.667em */
+    font-weight: bold;
+    font-style: italic;
+    background-color: #545a61;
+    color: #ffffff;
+    border: 0.067em solid #ddd;  /* 2px 2/30=0.067em */
+    margin-bottom: 0.667em;             /* 20px 20/30=0.667em */
+    padding: 0.667em 0.367em;           /* 20px 20/30=0.667em  11px 11/30=0.367em */
+    border-radius: 5px;
 }
-/* ===== MODULAR STYLES ===== */
-nav ul {
-  padding:0.611em;  /* 11px  */
+.main {
+  background-color: #acccf1;
+  border: 0.067em solid #ddd;
+  padding: 10px 10px;
+  border-radius: 5px; 
 }
-h2 a  {
-  font-size:0.694em; /* 18px/25.92=0.694 */
+.h-card {
+  font-size:16px;
+  padding-bottom:11px;
 }
-.exp-list{
-  padding-left: 1em; /* 18/18=1 */
-  padding-bottom:0.611em; /* 11/18=0.611 */
+.p-skill {
+  padding-bottom: 11px;
+}
+nav li {
+  /* float:left;  */
+  width: 100px;
+}
+.p-skill li, .p-education li{
+  list-style-type: disc;
+  padding-left: 11px;
+  list-style-position: inside;
+  
+}
+.p-experience ul {
+  padding-left: 11px;
+}
+.exp-list, .edu-list {
+  padding-bottom: 11px;
 }
 .exp-list li {
-  padding-bottom:0.611em; /* 11/18=0.611 */
+  list-style-type: disc;
+ /* padding-left: 11px; */
+  list-style-position: inside;
 }
-/* ===== STATE STYLES ===== */
+.exp-title {
+  font-weight:bold;
+}
+.exp-comp, .edu-school {
+  color:#ffffff;
+  background-color: #8d6a0b;
+  padding:6px 6px;
+  margin-bottom: 6px;
+}
