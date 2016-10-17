@@ -15,88 +15,100 @@ html {
   background-color: #1e2e41;
 }
 h1 {
-  font-size: 1.728em; /* 3 sizes up, 31.104px= 1.728em */
-  line-height: 1.06em ; /* 1.5 grid line 33px, 33/31.104=1.06em */
-  padding-bottom: 0.611em;  /* 11px=0.611em */
+  font-size: 1.728em; /* 31.104px  1.728em @18px */
+  line-height: 1.222em ; /* 38px, 1.222em @31.104px */
+  padding-bottom: 0.354em;  /* 11px 0.354em @ 31.104px */
 }
 h2 {
-  font-size: 1.44em; /* 2 sizes up, 25.92px, 1.44em */
-  line-height: 1.003em; /* 26px  26/25.92=1.003em  may change it later */
-  padding-bottom: 0.386em; /* 10px 10/25.92=0.386em */
+  font-size: 1.44em; /*  25.92px, 1.44em @ 18px*/
+  line-height: 1.196em; /* 31px 1.196em @25.92px */
+  padding-bottom: 0.424em; /* 11px 0.424em @25.92px */
   font-style: italic;
   /* color: #1e2e41; */
 }
+header {
+  font-weight: bold;
+  font-style: italic;
+  background-color: #545a61;
+  color: #ffffff;
+}
+
 nav {
-  font-size: 16px;
-  display: block;
-  /* background-color: #C4A79F;  /* Got this from color lover */
-  /* padding: 0.333em; /* 6px for all sides, 6/18=0.333em */
+  font-size: 0.833em;  /* 15px  0.833em @ 18px */
+  margin-left: 0;
+  padding-left: 0;
+  list-style: none;
 }
 p {
-  padding-bottom: 1.444em; /* 1.2 grid line 26px, 26/18=1.444em */
+  padding-bottom: 1.444em; /* 1.2 grid line 26px, 1.444em @ 18PX*/
 }
 video {
   width: 80%;
-  padding-bottom: 0.611em; /* 11px, 11/18=0.611em */
+  padding-bottom: 0.611em; /* 11px, 0.611em @ 18px */
 }
 footer {
-  font-size: 0.694em; /* 2 sizes down, 12.5px 0.694em */
+  font-size: 0.694em; /* 12.5px 0.694em @ 18px*/
+  line-height: 1.2em;  /* 15px 1.2em @ 12.5px  */
   background-color: #C4A79F;
+  text-align: center;
+  border: 0.08em solid #ddd; /* 1px 0.08em */
+  padding: 0.8em; /* 10px 0.8em @ 12.5px */
+  border-radius: 0.4em;  /* 5px 0.4em @ 12.5px */
 }
 h2 a {
-  font-size: 0.482em; /* 2 sizes down, 12.5px 12.5/25.92=0.482em */
+  font-size: 0.482em; /* 12.5px 0.482em @ 25.92px */
 }
+/* ===== LAYOUT STYLES ===== */
 .header {
-    /* font-size: 1.667em;                 /* 30px 30/18=1.667em */
-    font-weight: bold;
-    font-style: italic;
-    background-color: #545a61;
-    color: #ffffff;
-    border: 0.067em solid #ddd;  /* 2px 2/30=0.067em */
-    margin-bottom: 0.667em;             /* 20px 20/30=0.667em */
-    padding: 0.667em 0.367em;           /* 20px 20/30=0.667em  11px 11/30=0.367em */
-    border-radius: 5px;
+  border: 0.056em solid #ddd;  /* 1px 0.056em @ 18px */
+  margin-bottom: 1.222em;      /* 22px 1.222em @ 18px */
+  padding: 0.611em 0.333em;    /* 11px 0.611em @ 18px,   6px 0.333em @6px */
+  border-radius: 0.278em;      /* 5px 0.278em @ 18px */
 }
 .main {
   background-color: #acccf1;
-  border: 0.067em solid #ddd;
-  padding: 10px 10px;
-  border-radius: 5px; 
+  border: 0.056em solid #ddd;  /* 1px 0.056em @ 10px */
+  padding: 0.611em;            /* 11px 0.611em @ 18px */
+  border-radius: 0.278em;      /* 5px 0.278em @ 18px */
 }
 .h-card {
-  font-size:16px;
-  padding-bottom:11px;
+  font-size: 0.889em;      /* 16px 0.889em @ 18px*/
+  padding-bottom: 0.611em; /* 11px 0.611em @ 18px */
 }
 .p-skill {
-  padding-bottom: 11px;
+  padding-bottom: 0.611em; /* 11px 0.611em @ 18px */
 }
-nav li {
-  /* float:left;  */
-  width: 100px;
+nav  li {
+  display: inline;
+  padding: 0.133em;  /* 2px 0.133em @ 15px */
 }
-.p-skill li, .p-education li{
+nav a {
+  display: inlin-block;
+  text-decoration: none;
+}
+.p-skill li, .p-education li {
   list-style-type: disc;
-  padding-left: 11px;
+  padding-left: 0.611em;  /* 11px 0.611em @ 18px */
   list-style-position: inside;
-  
 }
 .p-experience ul {
-  padding-left: 11px;
+  padding-left: 0.611em;  /* 11px 0.611em @ 18px */
 }
 .exp-list, .edu-list {
-  padding-bottom: 11px;
+  padding-bottom: 0.611em; /* 11px 0.611em @ 18px */
 }
 .exp-list li {
   list-style-type: disc;
- /* padding-left: 11px; */
   list-style-position: inside;
 }
 .exp-title {
-  font-weight:bold;
+  font-weight: bold;
 }
 .exp-comp, .edu-school {
-  color:#ffffff;
+  color: #ffffff;
   background-color: #8d6a0b;
-  padding:6px 6px;
-  margin-bottom: 6px;
+  padding: 0.333em;       /* 6px 0.333em @ 18px */
+  margin-bottom: 0.333em; /* 6px 0.333em @ 18px */
 }
+/* ===== MODULAR STYLES ===== */
+/* ===== STATE STYLES ===== */
