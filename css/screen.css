@@ -11,8 +11,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   font-size: 1.125em;   /* 18px  18/16=1.125 */
   line-height: 1.222em;    /* 22px  22/18=1.222 */
+  font-family: Arial, Helvetica, sans-serif;
   padding: 1.222em 0.8em;   /* 22px=1.222em, 11px  11/18=0.611 */
-  background-color: #1e2e41;
+  background-color: #acccf1;
+  color: #486586;
 }
 h1 {
   font-size: 1.728em; /* 31.104px  1.728em @18px */
@@ -24,17 +26,17 @@ h2 {
   line-height: 1.196em; /* 31px 1.196em @25.92px */
   padding-bottom: 0.424em; /* 11px 0.424em @25.92px */
   font-style: italic;
-  /* color: #1e2e41; */
+  color: #11253b;
 }
 header {
   font-weight: bold;
   font-style: italic;
-  background-color: #545a61;
-  color: #ffffff;
+  background-color: #5f9cbb;
+  color: #f3f7f9;
 }
 
 nav {
-  font-size: 0.833em;  /* 15px  0.833em @ 18px */
+  font-size: 0.667em;  /* 12px  0.667em @ 18px */
   margin-left: 0;
   padding-left: 0;
   list-style: none;
@@ -47,29 +49,20 @@ video {
   padding-bottom: 0.611em; /* 11px, 0.611em @ 18px */
 }
 footer {
-  font-size: 0.694em; /* 12.5px 0.694em @ 18px*/
-  line-height: 1.2em;  /* 15px 1.2em @ 12.5px  */
+  font-size: 0.579em;  /* 10.417px 0.579em @ 18px*/
+  line-height: 1.44em;  /* 15px 1.440em @ 10.417px  */
   background-color: #C4A79F;
   text-align: center;
-  border: 0.08em solid #ddd; /* 1px 0.08em */
-  padding: 0.8em; /* 10px 0.8em @ 12.5px */
-  border-radius: 0.4em;  /* 5px 0.4em @ 12.5px */
+  padding: 1em; /* 10.417px 1em @ 10.417px */
+  border-radius: 0.48em;  /* 5px 0.48em @ 10.417px */
 }
 h2 a {
   font-size: 0.482em; /* 12.5px 0.482em @ 25.92px */
 }
-/* ===== LAYOUT STYLES ===== */
-.header {
-  border: 0.056em solid #ddd;  /* 1px 0.056em @ 18px */
-  margin-bottom: 1.222em;      /* 22px 1.222em @ 18px */
-  padding: 0.611em 0.333em;    /* 11px 0.611em @ 18px,   6px 0.333em @6px */
-  border-radius: 0.278em;      /* 5px 0.278em @ 18px */
-}
-.main {
-  background-color: #acccf1;
-  border: 0.056em solid #ddd;  /* 1px 0.056em @ 10px */
-  padding: 0.611em;            /* 11px 0.611em @ 18px */
-  border-radius: 0.278em;      /* 5px 0.278em @ 18px */
+figcaption {
+  font-size: 0.694em; /* 12.5px  0.694em @ 18px */
+  padding-bottom: 0.611em; /* 11px, 0.611em @ 18px */
+  color: #84059f;
 }
 .h-card {
   font-size: 0.889em;      /* 16px 0.889em @ 18px*/
@@ -78,12 +71,25 @@ h2 a {
 .p-skill {
   padding-bottom: 0.611em; /* 11px 0.611em @ 18px */
 }
+.introduction, .gallery {
+  margin-bottom: 0.611em; /* 11px 0.611em @ 18px */
+}
+.p-picture {
+  margin-bottom: 0.611em; /* 11px 0.611em @ 18px */
+}
+.p-contact {
+  margin-bottom: 0.611em; /* 11px 0.611em @ 18px */
+}
+.p-education {
+  margin-bottom: 0.611em; /* 11px 0.611em @ 18px */
+}
+/* ===== LAYOUT STYLES ===== */
+
 nav  li {
   display: inline;
-  padding: 0.133em;  /* 2px 0.133em @ 15px */
+  padding: 0.417em;  /* 5px 0.417em @ 12px */
 }
 nav a {
-  display: inlin-block;
   text-decoration: none;
 }
 .p-skill li, .p-education li {
@@ -105,10 +111,90 @@ nav a {
   font-weight: bold;
 }
 .exp-comp, .edu-school {
-  color: #ffffff;
-  background-color: #8d6a0b;
+  font-style: italic;
+  text-decoration: underline;
   padding: 0.333em;       /* 6px 0.333em @ 18px */
   margin-bottom: 0.333em; /* 6px 0.333em @ 18px */
+  font-weight: bold;
+}
+.gallery figure {
+  display: inline-block;
+  width: -moz-min-content;
+  width: -webkit-min-content;
+  width: min-content;
+  padding-bottom: 0.333em; /* 6px 0.333em @ 18px */
+  margin-bottom: 0.333em;  /* 6px 0.333em @ 18px */
+}
+.p-picture, .p-picture img {
+  width: 80vw;
+  height: auto;
+}
+.p-picture, .p-contact, .p-summary, .p-skill, .p-experience, .p-education {
+  float: left;
 }
 /* ===== MODULAR STYLES ===== */
+.header {
+  padding: 0.611em 0.333em; /* 11px 0.611em @ 18px,   6px 0.333em @6px */
+  margin-bottom: 0.611em;   /* 11px 0.611em @ 18px */
+}
+.main:after {
+    content: ""; 
+    clear: both;
+    display: block;
+}
 /* ===== STATE STYLES ===== */
+/* 700 @ 16px */
+@media screen and (min-width: 700px) {
+  h2 {
+    padding-left: 0.611em;   /* 11px 0.611em @ 18px */
+  }
+  .p-picture, .p-picture  img {
+    width: 40vw;   /* 3 col of 7, 300-22=278px */
+    height: auto;
+    float: left;
+  }
+  .resume-con-pro, .p-contact, .p-summary {
+    width: 50vw;  /* 4 col of 7  400-22=378px */
+    float: right;
+  }
+  .p-skill {
+    clear: both;
+  }
+  .p-skill, .p-education {
+    width: 25vw; /* 2 col of 7, 200-22=178px */
+    float: left;
+  }
+  .p-experience {
+    width: 55vw; /* 5 col of 7, 500-22=478px */
+    float: right;
+    border-left-style: double;
+    border-left-width: 0.625em;  /* 5px, 0.625em @ 18px */
+    border-left-color: #222;
+  }
+  /* Still working on paddings between sections */
+  /*.resume-top, .resume-bottom {
+    margin-bottom: 33px;
+    border: 6px solid #ddd;
+    display: box;
+  } */
+  footer {
+    clear: both;
+    margin-top: 0.611em;   /* 11px 0.611em @ 18px  This is not in effect now! ?? */
+  }
+}
+@media screen and (min-width: 500px) {
+  .p-picture, .p-picture  img {
+    width: 40vw;
+    height: auto;
+    float: left;
+  }
+  .p-contact {
+    width: 40vw;
+    height: auto;
+    float: right;
+    margin-top: 3.056em; /* 55px, 3.056em @ 18px */
+  }
+  footer {
+    clear: both;
+  }
+}
