@@ -11,7 +11,8 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   font-size: 1.125em;   /* 18px  18/16=1.125 */
   line-height: 1.222em;    /* 22px  22/18=1.222 */
-  font-family: Arial, Helvetica, sans-serif;
+ /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: verdana, geneva, sans-serif;
   padding: 1.222em 0.8em;   /* 22px=1.222em, 11px  11/18=0.611 */
   background-color: #acccf1;
   color: #486586;
@@ -143,12 +144,8 @@ nav a {
     display: block;
 }
 /* ===== STATE STYLES ===== */
-/* 
-    Not sure base font is 18px that set as default for 
-    this file or base to the browser default 16px.
-    em converstion is not done until clarify this.
-*/
 @media screen and (min-width: 500px) {
+  /* For screen width greater than 500px */
   .p-picture, .p-picture  img {
     width: 40vw;
     height: auto;
@@ -163,19 +160,15 @@ nav a {
   }
   .p-summary {
     clear: both;
-   /* border: 6px solid #ddd; */
   }
   footer {
     clear: both;
   }
 }
-/* 700 @ 16px */
+/* For screen width greater than 700px */
 @media screen and (min-width: 700px) {
-  h2 {
-    padding-left: 11px;
-  }
   .p-summary h2 {
-    padding-left: 0;   /* 11px 0.611em @ 18px */
+    padding-left: 0;   
   }
   .p-picture, .p-picture  img {
     width: 40vw;   /* 3 col of 7, 300-22=278px */
@@ -190,32 +183,35 @@ nav a {
   .p-contact {
     float: left;
     margin-top: 0;
-    margin-left: 11px;
-    margin-bottom: 22px;
+    margin-left: 0.611em;     /* 11px 0.611em @ 18px */
+    margin-bottom: 1.222em;   /* 22px  1.222em @ 18px */
     /* border: 6px solid #ddd; */
   }
   .p-summary {
    /* border: 6px solid #ddd; */
-    margin-left: 11px;
+    margin-left: 0.611em;  /* 11px 0.611em @ 18px */
   }
   .p-skill {
     clear: both;
-    border: 6px solid #ddd;
+   /* border: 6px solid #ddd; */
   }
   .p-skill, .p-education {
     width: 25vw; /* 2 col of 7, 200-22=178px */
     float: left;
   }
+  .p-experience h2 {
+    padding-left: 0.611em; /* 11px 0.611em @ 18px  */
+  } 
   .p-experience {
-    width: 55vw; /* 5 col of 7, 500-22=478px */
+    width: 65vw; /* 5 col of 7, 500-22=478px */
     float: right;
     border-left-style: double;
-    border-left-width: 3px;  /* 5px, 0.625em @ 18px */
+    border-left-width: 0.1667em;  /* 3px, 0.1667em @ 18px */
     border-left-color: #7879be;
   }
   footer {
     clear: both;
-    margin-top: 22px;   
+    margin-top: 1.222em;   /* 22px  1.222em @ 18px */
   }
 }
 
