@@ -9,22 +9,21 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* ===== BASE STYLES ===== */
 
 html {
-  font-size: 1.125em;   /* 18px  18/16=1.125 */
-  line-height: 1.222em;    /* 22px  22/18=1.222 */
- /* font-family: Arial, Helvetica, sans-serif; */
+  font-size: 1.125em;      /* 18px  1.125em @ 16px */
+  line-height: 1.222em;    /* 22px  1.222em @ 18px */
   font-family: verdana, geneva, sans-serif;
-  padding: 1.222em 0.8em;   /* 22px=1.222em, 11px  11/18=0.611 */
+  padding: 1.222em 0.611em;  /* 22px 1.222em @ 18px, 11px 0.611em @ 18px */
   background-color: #acccf1;
   color: #486586;
 }
 h1 {
-  font-size: 1.728em; /* 31.104px  1.728em @18px */
+  font-size: 1.728em;    /* 31.104px  1.728em @18px */
   line-height: 1.222em ; /* 38px, 1.222em @31.104px */
   padding-bottom: 0.354em;  /* 11px 0.354em @ 31.104px */
 }
 h2 {
-  font-size: 1.44em; /*  25.92px, 1.44em @ 18px*/
-  line-height: 1.196em; /* 31px 1.196em @25.92px */
+  font-size: 1.44em;       /*  25.92px, 1.44em @ 18px*/
+  line-height: 1.196em;    /* 31px 1.196em @25.92px */
   padding-bottom: 0.424em; /* 11px 0.424em @25.92px */
   font-style: italic;
   color: #11253b;
@@ -43,7 +42,7 @@ nav {
   list-style: none;
 }
 p {
-  padding-bottom: 1.444em; /* 1.2 grid line 26px, 1.444em @ 18PX*/
+  padding-bottom: 1.444em; /* 1.2 grid line 26px, 1.444em @ 18px */
 }
 video {
   width: 80%;
@@ -61,7 +60,7 @@ h2 a {
   font-size: 0.482em; /* 12.5px 0.482em @ 25.92px */
 }
 figcaption {
-  font-size: 0.694em; /* 12.5px  0.694em @ 18px */
+  font-size: 0.694em;      /* 12.5px  0.694em @ 18px */
   padding-bottom: 0.611em; /* 11px, 0.611em @ 18px */
   color: #84059f;
 }
@@ -113,10 +112,10 @@ nav a {
 }
 .exp-comp, .edu-school {
   font-style: italic;
-  text-decoration: underline;
   padding: 0.333em;       /* 6px 0.333em @ 18px */
   margin-bottom: 0.333em; /* 6px 0.333em @ 18px */
   font-weight: bold;
+  color: #175348;
 }
 .gallery figure {
   display: inline-block;
@@ -132,28 +131,28 @@ nav a {
 }
 .p-picture, .p-contact, .p-summary, .p-skill, .p-experience, .p-education {
   float: left;
-} 
+}
 /* ===== MODULAR STYLES ===== */
 .header {
   padding: 0.611em 0.333em; /* 11px 0.611em @ 18px,   6px 0.333em @6px */
   margin-bottom: 0.611em;   /* 11px 0.611em @ 18px */
 }
 .main:after {
-    content: ""; 
-    clear: both;
-    display: block;
+  content: "";
+  clear: both;
+  display: block;
 }
 /* ===== STATE STYLES ===== */
 @media screen and (min-width: 500px) {
   /* For screen width greater than 500px */
   .p-picture, .p-picture  img {
-    width: 40vw;
+    width: 40vw;  /* 3 col of 7, 214.275-22=192.275px */
     height: auto;
     float: left;
     margin-bottom: 0.611em; /* 11px 0.611em @ 18px  */
   }
   .p-contact {
-    width: 40vw;
+    width: 40vw;  /* 3 col of 7, 214.275-22=192.275px */
     height: auto;
     float: right;
     margin-top: 3.056em; /* 55px, 3.056em @ 18px */
@@ -168,40 +167,41 @@ nav a {
 /* For screen width greater than 700px */
 @media screen and (min-width: 700px) {
   .p-summary h2 {
-    padding-left: 0;   
+    padding-left: 0;
   }
   .p-picture, .p-picture  img {
     width: 40vw;   /* 3 col of 7, 300-22=278px */
     height: auto;
     float: left;
   }
-   .resume-con-pro { 
+  .resume-con-pro {
     width: 50vw;  /* 4 col of 7  400-22=378px */
-    float: left; 
-/*border: 6px solid #ddd; */
+    float: left;
   }
   .p-contact {
     float: left;
     margin-top: 0;
     margin-left: 0.611em;     /* 11px 0.611em @ 18px */
     margin-bottom: 1.222em;   /* 22px  1.222em @ 18px */
-    /* border: 6px solid #ddd; */
   }
   .p-summary {
-   /* border: 6px solid #ddd; */
     margin-left: 0.611em;  /* 11px 0.611em @ 18px */
+  }
+  .p-education h3 {
+    padding-left: 0;
+    colorz: red;
   }
   .p-skill {
     clear: both;
-   /* border: 6px solid #ddd; */
   }
   .p-skill, .p-education {
-    width: 25vw; /* 2 col of 7, 200-22=178px */
+    width: 25vw;   /* 2 col of 7, 200-22=178px */
     float: left;
+    padding-left: 0;
   }
   .p-experience h2 {
     padding-left: 0.611em; /* 11px 0.611em @ 18px  */
-  } 
+  }
   .p-experience {
     width: 65vw; /* 5 col of 7, 500-22=478px */
     float: right;
