@@ -143,7 +143,9 @@ nav a {
   display: block;
 }
 /* ===== STATE STYLES ===== */
+/* stylelint-disable */
 @media screen and (min-width: 500px) {
+/* stylelint-enable */
   /* For screen width greater than 500px */
   .p-picture, .p-picture  img {
     width: 40vw;  /* 3 col of 7, 214.275-22=192.275px */
@@ -165,7 +167,9 @@ nav a {
   }
 }
 /* For screen width greater than 700px */
+/* stylelint-disable */
 @media screen and (min-width: 700px) {
+/* stylelint-enable */
   .p-summary h2 {
     padding-left: 0;
   }
